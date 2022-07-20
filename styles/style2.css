@@ -189,18 +189,16 @@ hr {
     margin-right: 140px;
 }
 
-footer nav {
-    margin-left: 351px;
-    margin-right: 351px;
-    margin-bottom: 80px;
-}
-
 .navigation {
     display: flex;
     justify-content: center;
     padding: 20px;
-    justify-content: space-evenly;
-    column-gap: 0.5em;
+    column-gap: 40px;
+}
+
+.social-links {
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 .fa-brands:before {
