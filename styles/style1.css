@@ -238,7 +238,7 @@ footer nav {
     }
 
     .top-banner {
-        width: 90%;
+        width: 80%;
         height: fit-content;
         flex-direction: column;
         justify-content: center;
@@ -255,6 +255,15 @@ footer nav {
     .top-info {
         width: 80%;
         align-items: center;
+        margin-left: 0;
+        height: 264px;
+        text-align: center;
+    }
+
+
+    .top-image {
+        margin-right: 0;
+        text-align: center;
     }
 
     .top-image img {
@@ -273,6 +282,7 @@ footer nav {
 
     .side-section {
         background-color: white;
+        align-items: center;
     }
 
     .blog {
