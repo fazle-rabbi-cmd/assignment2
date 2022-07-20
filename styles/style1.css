@@ -1,12 +1,13 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+
 }
 
 h1 {
     font-weight: 700;
     font-size: 70px;
-    line-height: 80px;
+
 }
 
 /*---------- top-section ---------*/
@@ -17,23 +18,27 @@ h1 {
 }
 
 .top-banner {
-    position: absolute;
+
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #161616;
     color: #FFFFFF;
     border: none;
     border-radius: 30px;
-    margin-top: 50px;
-    margin-right: 139px;
-    margin-left: 140px;
-    margin-bottom: 130px;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    max-width: 1321px;
+}
+
+.top-image:hover {
+    transform: rotate(360deg);
 }
 
 .top-banner button {
     border: none;
     border-radius: 5px;
     margin-top: 10px;
+    margin-bottom: 5rem;
     padding: 16px 25px;
     background-color: #DD0000;
 }
@@ -44,25 +49,30 @@ h1 {
 }
 
 .top-info {
-
-    width: 531px;
+    width: 50%;
+    /* width: 531px;
     height: 424px;
     margin-left: 106px;
     margin-top: 60px;
-    margin-bottom: 121px;
+    margin-bottom: 121px; */
 }
 
 .top-image {
-
-    margin-top: 33px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* margin-top: 33px;
     margin-left: 24px;
     margin-right: 79px;
-    margin-bottom: -3.5px;
+    margin-bottom: -5.5px; */
+    transition: transform 2s ease-out;
 }
 
 .top-image img {
-    width: 581px;
-    height: 613px;
+    max-width: 100%;
+    width: 431px;
+    height: auto;
 }
 
 /* ---------
@@ -85,9 +95,6 @@ h1 {
     flex-direction: column;
     border-radius: 10px;
     margin-left: 10px;
-
-
-
 }
 
 .side-section button {
@@ -96,7 +103,6 @@ h1 {
     width: 252px;
     height: 60px;
     margin: 30px 30px;
-
 }
 
 #first-button {
@@ -149,6 +155,8 @@ h1 {
 .time-and-comment {
     width: 143px;
     height: 26px;
+    color:
+        #4D4D4D
 }
 
 .time-and-comment,
@@ -158,6 +166,22 @@ h1 {
     justify-content: space-between;
 }
 
+/* -------view button-------- */
+
+.view-all {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.view-button {
+    display: none;
+    background-color: #DD0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
 
 /* -----------footer section--------- */
 
@@ -196,4 +220,50 @@ footer nav {
     padding: 20px;
     justify-content: space-evenly;
     column-gap: 0.5em;
+}
+
+/* -------media query---------- */
+
+/* ..........for mobile devices......... */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    .top-banner {
+        max-height: 646px;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 1rem;
+        background-color: #161616;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 30px;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        max-width: 992px;
+    }
+
+    .top-image img {
+        max-width: 100%;
+        width: 320px;
+        height: auto;
+    }
+
+    .side-section {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
