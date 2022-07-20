@@ -238,7 +238,7 @@ footer nav {
     }
 
     .top-banner {
-        width: 80%;
+        width: 91%;
         height: fit-content;
         flex-direction: column;
         justify-content: center;
@@ -277,6 +277,7 @@ footer nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 26px 26px;
     }
 
 
@@ -286,7 +287,7 @@ footer nav {
     }
 
     .blog {
-
+        margin-left: -10px;
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -300,7 +301,7 @@ footer nav {
 
 /* --------for tablet devices--------- */
 
-@media only screen and (min-width:688px) and (max-width) {
+@media only screen and (min-width:689px) and (max-width:992px) {
     body {
         margin: 0;
     }
@@ -308,50 +309,67 @@ footer nav {
     h1 {
         font-size: 40px;
         line-height: 50px;
+
     }
 
     .top-banner {
-        width: 90%;
-        height: fit-content;
+        width: 86%;
+        height: 464px;
+
     }
 
     .top-banner p {
-
         font-size: 14px;
         line-height: 24px;
-        text-align: center;
     }
 
     .top-info {
-        width: 80%;
-        align-items: center;
+        width: 95%;
+
+        margin-left: 20px;
+        height: 264px;
+    }
+
+
+    .top-image {
+        margin-right: 0;
+        text-align: center;
     }
 
     .top-image img {
         width: 90%;
+        height: 431px;
         align-items: center;
         justify-content: center;
     }
 
     .main {
-        display: flex;
+        width: 90%;
         flex-direction: column;
-
+        justify-content: center;
+        align-items: center;
     }
 
 
     .side-section {
-
+        height: 214px;
+        width: 100%;
+        flex-direction: row;
         background-color: white;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    .side-section button {
+        margin: 0;
+        width: 190px;
+
     }
 
     .blog {
-
+        margin-left: 0;
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .view-button {
-        display: inline-block;
     }
 
     .navigation {
@@ -359,5 +377,8 @@ footer nav {
         justify-content: center;
     }
 
+    .view-button {
+        display: block;
+    }
 
 }
