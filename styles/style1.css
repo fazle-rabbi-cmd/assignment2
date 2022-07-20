@@ -18,16 +18,16 @@ h1 {
 }
 
 .top-banner {
-
+    width: 1321px;
+    height: 646px;
     display: flex;
-    justify-content: space-between;
     background-color: #161616;
     color: #FFFFFF;
     border: none;
     border-radius: 30px;
-    margin-right: 5rem;
-    margin-left: 5rem;
-    max-width: 1321px;
+    margin-top: 50px;
+    margin-bottom: 5%;
+
 }
 
 .top-image:hover {
@@ -38,7 +38,6 @@ h1 {
     border: none;
     border-radius: 5px;
     margin-top: 10px;
-    margin-bottom: 5rem;
     padding: 16px 25px;
     background-color: #DD0000;
 }
@@ -49,30 +48,23 @@ h1 {
 }
 
 .top-info {
-    width: 50%;
-    /* width: 531px;
+    width: 531px;
     height: 424px;
     margin-left: 106px;
-    margin-top: 60px;
-    margin-bottom: 121px; */
 }
 
 .top-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    /* margin-top: 33px;
+
+    margin-top: 33px;
     margin-left: 24px;
     margin-right: 79px;
-    margin-bottom: -5.5px; */
+    margin-bottom: -5.5px;
     transition: transform 2s ease-out;
 }
 
 .top-image img {
-    max-width: 100%;
-    width: 431px;
-    height: auto;
+    width: 581px;
+    height: 613px;
 }
 
 /* ---------
@@ -81,7 +73,7 @@ h1 {
 .main {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 800px;
+    margin: 40px;
     margin-bottom: 100px;
 }
 
@@ -94,7 +86,10 @@ h1 {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    margin-left: 10px;
+}
+
+.side-section button:hover {
+    background-color: chartreuse;
 }
 
 .side-section button {
@@ -108,6 +103,7 @@ h1 {
 #first-button {
     margin-bottom: 0px;
 }
+
 
 #first-button a {
     text-decoration: none;
@@ -198,7 +194,7 @@ footer ul {
 
 .footer-heading {
     font-size: 40px;
-    padding-top: 130px;
+    padding-top: 100px;
 }
 
 hr {
@@ -211,7 +207,7 @@ hr {
 footer nav {
     margin-left: 351px;
     margin-right: 351px;
-    margin-bottom: 130px;
+    margin-bottom: 80px;
 }
 
 .navigation {
@@ -222,48 +218,136 @@ footer nav {
     column-gap: 0.5em;
 }
 
+.fa-brands:before {
+    color: white;
+}
+
 /* -------media query---------- */
 
 /* ..........for mobile devices......... */
 
-@media only screen and (min-width:688px) and (max-width:992px) {
+@media only screen and (max-width:688px) {
+    body {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+    }
 
     .top-banner {
-        max-height: 646px;
-        margin: 10px auto;
-        display: flex;
+        width: 90%;
+        height: fit-content;
         flex-direction: column;
-        text-align: center;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 0rem 1rem;
-        background-color: #161616;
-        color: #FFFFFF;
-        border: none;
-        border-radius: 30px;
-        margin-right: 5rem;
-        margin-left: 5rem;
-        max-width: 992px;
+    }
+
+    .top-banner p {
+
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .top-info {
+        width: 80%;
+        align-items: center;
     }
 
     .top-image img {
-        max-width: 100%;
-        width: 320px;
-        height: auto;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
     }
 
+    .main {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
     .side-section {
-        display: flex;
-        flex-direction: row;
         background-color: white;
+    }
+
+    .blog {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+/* --------for tablet devices--------- */
+
+@media only screen and (min-width:688px) and (max-width) {
+    body {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .top-banner {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .top-banner p {
+
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .top-info {
+        width: 80%;
+        align-items: center;
+    }
+
+    .top-image img {
+        width: 90%;
+        align-items: center;
+        justify-content: center;
     }
 
     .main {
         display: flex;
         flex-direction: column;
+
+    }
+
+
+    .side-section {
+
+        background-color: white;
     }
 
     .blog {
+
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .view-button {
+        display: inline-block;
+    }
+
+    .navigation {
+        align-items: center;
+        justify-content: center;
+    }
+
+
 }

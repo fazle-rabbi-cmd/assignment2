@@ -62,7 +62,7 @@ h1 {
     margin-left: 24px;
     margin-right: 79px;
     margin-bottom: -5.5px;
-    transition: transform 0.5s ease-out;
+    transition: transform 2s ease-out;
 }
 
 .top-image img {
@@ -93,6 +93,10 @@ h1 {
 
 
 
+}
+
+.side-section button:hover {
+    background-color: chartreuse;
 }
 
 .side-section button {
@@ -188,7 +192,7 @@ hr {
 footer nav {
     margin-left: 351px;
     margin-right: 351px;
-    margin-bottom: 130px;
+    margin-bottom: 80px;
 }
 
 .navigation {
@@ -197,4 +201,8 @@ footer nav {
     padding: 20px;
     justify-content: space-evenly;
     column-gap: 0.5em;
+}
+
+.fa-brands:before {
+    color: white;
 }
